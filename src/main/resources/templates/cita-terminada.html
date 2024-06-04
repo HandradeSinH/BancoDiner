@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerrar Cita</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h1>Cerrar Cita</h1>
+<p>La cita ha finalizado. A continuación, se muestran los datos de la cita:</p>
+
+<p>Turno: <span th:text="${cita.turno}"></span></p>
+<p>Sede: <span th:text="${cita.sede.nombre}"></span></p>
+<p>Fecha: <span th:text="${cita.fecha}"></span></p>
+<p>Cliente: <span th:text="${cita.id_cliente.nombre}"></span></p>
+<p>C.C: <span th:text="${cita.id_cliente.identificacion}"></span></p>
+<p>empleado: <span th:text="${cita.empleado.nombre}"></span></p>
+<p>Servicio: <span th:text="${cita.servicio}"></span></p>
+
+<form th:action="@{/empleado/cerrar-citas/{idCita}(idCita=${cita.id})}" method="post">
+    <textarea id="comentarios" name="comentarios" rows="4" cols="50" th:text="${cita.comentarios}"
+              th:value="${cita.comentarios}">
+
+    </textarea>
+    <input type="submit" value="Volver al portal del empleado">
+</form>
+</body>
+</html>
