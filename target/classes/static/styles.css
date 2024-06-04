@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #121212; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+h1 {
+    color: #ffffff;
+}
+
+form {
+    background-color: #1e1e1e; /* Fondo de formulario oscuro */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Sombra más intensa */
+}
+
+label {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+p {
+    color: #b3b3b3; /* Color de texto secundario */
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #333333; /* Fondo de textarea oscuro */
+    color: #e0e0e0; /* Color de texto claro */
+    border: 1px solid #555555; /* Borde oscuro */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.btn {
+    margin: 10px;
+    width: 200px;
+    color: #fff; /* Color de texto de botón claro */
+    background-color: #007BFF; /* Fondo de botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Quitar subrayado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+img {
+    width: 400px;
+    margin-bottom: 50px;
+}
+
+.form-container {
+    background-color: #1e1e1e; /* Fondo del contenedor del formulario oscuro */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5); /* Sombra más intensa */
+    width: 100%;
+    max-width: 400px;
+}
+
+.form-content {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    background-color: #333333; /* Fondo del campo de entrada oscuro */
+    color: #e0e0e0; /* Color del texto claro */
+    border: 1px solid #555555; /* Borde oscuro */
+    border-radius: 5px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
